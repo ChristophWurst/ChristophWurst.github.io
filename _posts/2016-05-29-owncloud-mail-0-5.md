@@ -19,7 +19,7 @@ When writing a message, it's also possible to attach files selected from the own
 Considering ownCloud Contacts and ownCloud Calendar two of the most important and commonly used community apps, there is a strong need to fill the gap and integrate with calendar too. There are many ideas on how we could integrate with the calendar app, but up to now there was no progress into that direction.
 
 #### The current solution
-Some platforms like \empth{meetup.com} attach .ics files of events when sending reminders. When using the mail app, you have to download the attachment either locally or to the ownCloud file system to open it then with either the calendar app or an external application. This workflow is inconvenient and unnecessary as it creates files that are only needed temporarily and therefore spam your file system.
+Platforms like [meetup.com](https://meetup.com) attach .ics files of events when sending reminders. When using the mail app, you have to download the attachment either locally or to the ownCloud file system to open it then with either the calendar app or an external application. This workflow is inconvenient and unnecessary as it creates files that are only needed temporarily and therefore spam your file system.
 
 ### The idea
 To make the integration as simple as possible from an user's perspective, the import should be possible in the mail app directly. Since ownCloud 9.0 the CalDAV back-end is integrated into core, hence we actually have no dependency on any another app.
