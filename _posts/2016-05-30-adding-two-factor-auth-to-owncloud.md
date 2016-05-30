@@ -12,7 +12,7 @@ Starting with refactoring and cleaning up of the existing auth system titled as 
 ![]({{ site.url}}/assets/oc_twofactor_5.png)
 
 ### Backward compatibility
-The great news is we are not breaking compatibility with old and third-party clients as we still allow authentication via username and password. However, the preferred way to configure clients is to create a device token (a.k.a. device-specific password) and use that as password. The ownCloud core will detect that the password is actually a token and use it to authenticate.
+The great news is we are not breaking compatibility with old and third-party clients as we still allow authentication via username and password. However, the preferred way to configure clients is to create a device token (a.k.a. device-specific password) and use that as password. The ownCloud core will detect that the password is actually a token and uses it to authenticate.
 
 In case admins want to enforce token-based auth and disallow login via password (with the exception of the login page of course), we added a [config option](https://github.com/owncloud/core/pull/24811/files#diff-2f769bc01ffefdf14eb04404218e7582) admins can set. The ownCloud server will then deny authenticated requests if the password is the login password and not a device token.
 
@@ -20,7 +20,7 @@ In case admins want to enforce token-based auth and disallow login via password 
 Token-based authentication is the foundation for second factor authentication. Based on [Lukas Reschke's](https://github.com/LukasReschke) [proof of concept pull request](https://github.com/owncloud/core/pull/19752) I added internal two-factor auth support to ownCloud. Specifically, core will take care of communication and management of second factor providers that are plugged into the system as apps. By decoupling core interfaces and specific two-factor auth (2FA) providers we keep the ownCloud core easier to maintain while allowing admins to create and install 2FA providers they want without needing to modify the ownCloud core.
 
 ### Architecture overview
-As mentioned developers can create their own specific second factor providers. After a successful login, ownCloud will check if there are apps providing 2FA support. If there is at least one, access to the account will be blocked until one of the 2FA challenges was solved. Hence, you won't find any second factor if you just download and install a recent development version of ownCloud.
+As mentioned above, developers can create their own specific second factor providers. After a successful login, ownCloud will check if there are apps providing 2FA support. If there is at least one, access to the account will be blocked until one of the 2FA challenges was solved. Hence, you won't find any second factor if you just download and install a recent development version of ownCloud.
 
 ![]({{ site.url}}/assets/oc_twofactor_1.png)
 ![]({{ site.url}}/assets/oc_twofactor_2.png)
@@ -52,10 +52,10 @@ As soon as a 2FA provider is found, users are enforced to solve the challenge be
 
 ```
 $ ./occ twofactor:disable florian
-2FA disabled for user florian
+Two-factor authentication disabled for user florian
 
 $ ./occ twofactor:enable florian
-2FA enabled for user florian
+Two-factor authentication enabled for user florian
 ```
 
 ### Implications of using two-factor auth
