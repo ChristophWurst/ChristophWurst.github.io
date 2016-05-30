@@ -20,7 +20,7 @@ In case admins want to enforce token-based auth and disallow login via password 
 Token-based authentication is the foundation for second factor authentication. Based on [Lukas Reschke's](https://github.com/LukasReschke) [proof of concept pull request](https://github.com/owncloud/core/pull/19752) I added internal two-factor auth support to ownCloud. Specifically, core will take care of communication and management of second factor providers that are plugged into the system as apps. By decoupling core interfaces and specific two-factor auth (2FA) providers we keep the ownCloud core easier to maintain while allowing admins to create and install 2FA providers they want without needing to modify the ownCloud core.
 
 ### Architecture overview
-As mentioned developers can create their own specific second factor providers. After a successful login, ownCloud will check if there are apps providing 2FA support. If there is at least one, access to the account will be locked until one of the 2FA challenges was solved. Hence, you won't find any second factor if you just download and install a recent development version of ownCloud.
+As mentioned developers can create their own specific second factor providers. After a successful login, ownCloud will check if there are apps providing 2FA support. If there is at least one, access to the account will be blocked until one of the 2FA challenges was solved. Hence, you won't find any second factor if you just download and install a recent development version of ownCloud.
 
 ![]({{ site.url}}/assets/oc_twofactor_1.png)
 ![]({{ site.url}}/assets/oc_twofactor_2.png)
