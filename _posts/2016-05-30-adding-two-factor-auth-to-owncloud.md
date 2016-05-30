@@ -4,7 +4,7 @@ title: Adding two-factor auth to ownCloud
 date: 2016-05-30
 ---
 
-I have spent a couple of weeks working on a fudamental component of the ownCloud core, it's authentication system. Starting with ownCloud 9.1 (which will be released in July 2016) it will be possible to plug custom two-factor auth providers into the ownCloud core for enhanced account security.
+I have spent a couple of weeks working on a fundamental component of the ownCloud core, it's authentication system. Starting with ownCloud 9.1 (which will be released in July 2016) it will be possible to plug custom two-factor auth providers into the ownCloud core for enhanced account security.
 
 ## Pluggable auth
 Starting with refactoring and cleaning up of the existing auth system titled as ["Pluggable](https://github.com/owncloud/core/issues/23458) [auth"](https://github.com/owncloud/core/pull/24189), I added token-based authentication to the ownCloud server. Token-based authentication finally makes it possible to connect client applications and devices without giving those your login password. Additionally, session tokens are created for browsers. This allows to track and kill browser sessions [via the personal settings page of an ownCloud user](https://github.com/owncloud/core/pull/24703) remotely. This means if you loose your smart phone, you no longer have to change your password to disconnect all connected browsers and devices, you can now invalidate that specific device token with a single click.
@@ -48,7 +48,7 @@ Additionally, it is necessary to tag the app as ``prelogin`` and ``authenticatio
 A very simple proof of concept provider was created as "TwoFactor Email", which may be used as reference: [https://github.com/owncloud/twofactor_email](https://github.com/owncloud/twofactor_email). It registers a dead simple provider that is enabled for all users and which challenge can be passed with the hard-coded password "passme".
 
 ### Disabling two-factor auth for specific users
-As soon as a 2FA provider is found, users are enforced to solve the challenge before getting access to their account. However, it can happen that users loose access to their second factor (e.g. email verification is used and the mail server is down for some hours), the admin can (temporarily) disable the second factor via an occ command:
+As soon as a 2FA provider is found, users are enforced to solve the challenge before getting access to their account. However, it can happen that users loose access to their second factor (e.g. email verification is used and the mail server is down for some hours), the admin can (temporarily) disable the second factor via an `occ` command:
 
 ```
 $ ./occ twofactor:disable florian
