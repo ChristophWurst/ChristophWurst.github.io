@@ -51,11 +51,11 @@ openssl dgst -sha512 -sign you_app.key you_app.tar.gz | openssl base64
 ```
 
 The openssl command will print the signature to your terminal. You´ll need this signature to register the app archive on the app store. Before that, the archive has to be uploaded to a publicly accessible server. If you´re hosting your app on GitHub, you can simply create a new release and upload the archive there.
-Next, you can register new release at [apps.nextcloud.com](apps.nextcloud.com). Make sure you [register your app](https://nextcloudappstore.readthedocs.io/en/latest/developer.html#registering-an-app) before you register the first release. When registering the release you´ll need the URL to the archive and the signature. If all goes well, the app store will download your archive, check its meta data and save the release.
+Next, you can register new release at [apps.nextcloud.com](apps.nextcloud.com). Make sure you [register your app](https://nextcloudappstore.readthedocs.io/en/latest/developer.html#registering-an-app) before you register the first release. When registering the release you´ll need the URL to the archive and the signature. If all goes well, the app store will download your archive, check its metadata and save the release.
 
 Note: you don´t have to register the app release manually, you can also use the [app store´s REST API](https://nextcloudappstore.readthedocs.io/en/latest/restapi.html#api-create-release) 🚀
 
-So far, so got – but, to save you some time for the next releases of your awesome app, it´s a good idea to automate this process.
+So far, so good – but, to save you some time for the next releases of your awesome app, it´s a good idea to automate this process.
 
 ## Automate packaging and signing
 
@@ -95,7 +95,7 @@ appstore: clean
 	$(project_dir) $(sign_dir)
 	tar -czf $(build_dir)/$(app_name).tar.gz \
 		-C $(sign_dir) $(app_name)
-openssl dgst -sha512 -sign $(cert_dir)/$(app_name).key $(build_dir)/$(app_name).tar.gz | openssl base64
+	openssl dgst -sha512 -sign $(cert_dir)/$(app_name).key $(build_dir)/$(app_name).tar.gz | openssl base64
 ```
 
 All you have to adjust in the Makefile above is your app´s name in the first line. The script assumes to find the certificate and private key in ``.nextcloud/certificates`` inside your Nextcloud. This is the convention. Alternatively, you can of course adapt the command to your needs. The important part is to keep your private key out of your git repository, especially if you host it publicly.
@@ -110,7 +110,7 @@ You'll find the archive in `build/artifacts/your_app.tar.gz`.
 
 ## Conclusion
 
-As you can see, it´s not rocket sience to create a packaged version of your Nextcloud app for [apps.nextcloud.com](https://apps.nextcloud.com). Still, it makes sense to automate the process in a small script to save yourself some time 
+As you can see, it´s not rocket science to create a packaged version of your Nextcloud app for [apps.nextcloud.com](https://apps.nextcloud.com). Still, it makes sense to automate the process in a small script to save yourself some time 
 😉
 
 ## References
