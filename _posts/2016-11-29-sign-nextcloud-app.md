@@ -98,7 +98,7 @@ appstore: clean
 	openssl dgst -sha512 -sign $(cert_dir)/$(app_name).key $(build_dir)/$(app_name).tar.gz | openssl base64
 ```
 
-All you have to adjust in the Makefile above is your app´s name in the first line. The script assumes to find the certificate and private key in ``.nextcloud/certificates`` inside your Nextcloud. This is the convention. Alternatively, you can of course adapt the command to your needs. The important part is to keep your private key out of your git repository, especially if you host it publicly.
+All you have to adjust in the Makefile above is your app´s name in the first line. The script assumes to find the certificate and private key in ``.nextcloud/certificates`` inside your home directory. This is the convention. Alternatively, you can of course adapt the command to your needs. The important part is to keep your private key out of your git repository, especially if you host it publicly.
 
 Then you´re ready to package and sign your app with a single command:
 
