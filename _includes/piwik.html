@@ -3,6 +3,8 @@
   var _paq = _paq || [];
   _paq.push(['trackPageView']);
   _paq.push(['enableLinkTracking']);
+  // accurately measure the time spent on the last pageview of a visit
+  _paq.push(['enableHeartBeatTimer']);
   (function() {
     var u="https://piwik.wuc.me/";
     _paq.push(['setTrackerUrl', u+'piwik.php']);
