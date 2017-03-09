@@ -3,6 +3,7 @@ layout: post
 title: Secure your Nextcloud with TOTP two-factor auth
 date: 2016-09-08
 tags: nextcloud
+comments: true
 ---
 
 Starting with [Nextcloud 10](https://nextcloud.com/blog/secure-monitor-and-control-your-data-with-nextcloud-10-get-it-now/), it is possible to [plug custom two-factor auth apps into Nextcloud's authentication system](https://statuscode.ch/2016/06/nextcloud-two-factor-bruteforce-and-more/). One of the most popular second factors is *TOTP*, also known as *Google Authenticator*, for which I have created a [2FA provider app for Nextcloud](https://github.com/ChristophWurst/twofactor_totp).
