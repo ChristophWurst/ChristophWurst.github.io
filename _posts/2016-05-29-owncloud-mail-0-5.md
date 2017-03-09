@@ -2,6 +2,7 @@
 layout: post
 title: ownCloud Mail 0.5 released
 date: 2016-05-29
+tags: nextcloud
 ---
 
 Following the [release early, release often philosophy](https://en.wikipedia.org/wiki/Release_early,_release_often) when working on ownCloud Mail, we do releases [quite often](https://github.com/owncloud/mail/releases). The most important enhancement of this release is our first step towards tight integration with more community apps. Additionally, it marks the beginning of [Tahaa's GSOC coding period](https://owncloud.org/blog/owncloud-and-google-summer-of-code/).

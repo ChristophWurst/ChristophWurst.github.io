@@ -2,6 +2,7 @@
 layout: post
 title: Adding two-factor auth to ownCloud
 date: 2016-05-30
+tags: nextcloud
 ---
 
 I have spent a couple of weeks working on a fundamental component of the ownCloud core, its authentication system. Starting with ownCloud 9.1 (which will be released in July 2016) it will be possible to plug custom two-factor auth providers into the ownCloud core for enhanced account security.

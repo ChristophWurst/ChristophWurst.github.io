@@ -3,6 +3,7 @@ layout: post
 title: Keep your Nextcloud app secure
 date: 2016-11-29
 comments: true
+tags: nextcloud
 ---
 
 Nextcloud 11 will be released soon and this will be the first version of the Nextcloud server that uses the new app store at [apps.nextcloud.com](https://apps.nextcloud.com). All apps uploaded to this new app store are [signed](https://docs.nextcloud.com/server/11/developer_manual/app/code_signing.html) by the developers. Usually that means a few manual steps, but I've found a way to nicely automate this and I thought it was worth to share with other developers.

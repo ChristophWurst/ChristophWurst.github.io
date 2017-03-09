@@ -3,6 +3,7 @@ layout: post
 title: Installing .NET Core 1.1.1 SDK on Travis CI
 date: 2017-03-09
 comments: true
+tags: dotnet
 ---
 
 Yesterday I wanted to enable Travis CI for an university project where we're using [.NET Core](https://www.microsoft.com/net/core). Although [Travis travis currently supports .NET Core builds](https://docs.travis-ci.com/user/languages/csharp/#Choosing-runtime-and-version-to-test-against), it does not yet include the new [.NET Core tools 1.0](https://blogs.msdn.microsoft.com/dotnet/2017/03/07/announcing-net-core-tools-1-0/). A new version of the Core tools is necessary if you try to build projects using the `.csproj` Project files instead of the `project.json` files.
