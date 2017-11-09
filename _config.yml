@@ -8,3 +8,4 @@ flickr_username: doubletight
 
 # Build settings
 markdown: kramdown
+highlighter: rouge

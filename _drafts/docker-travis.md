@@ -1,7 +1,6 @@
 ---
 layout: post
 title: Using Docker to speed up Travis builds
-date: 2016-02-21
 ---
 Depending on the complexity of continuous integration test matrices on Travis, running all test with various configurations can take some time. While that might not be an issue for most scenarious – e.g. testing the master branch of your project after a pull request has been merged – it's quite annoying to have to wait for test results for an hour if you depend on the those.
 
