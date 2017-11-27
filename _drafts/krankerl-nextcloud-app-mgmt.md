@@ -9,7 +9,7 @@ I've been writing a lot of Rust code this year, partly because I used it for som
 university projects and secondly because I'll start writing a master thesis about
 concurrency in Rust soon.
 
-There are many things I like about Rust and it's ecosystem. One of them is the
+There are many things I like about Rust and its ecosystem. One of them is the
 great CLI tooling with Cargo. Cargo is Rust's build, testing, packaging and
 publishing tool.
 
@@ -126,7 +126,7 @@ what I've compiled it for.
 ## The name
 
 In case you wondered about the app's (strange) name: the word *Krankerl* means
-[*tendril*(https://www.instagram.com/p/BatDv1DhhOe/) in Lower Austrian dialect.
+[*tendril*](https://www.instagram.com/p/BatDv1DhhOe/) in Lower Austrian dialect.
 I chose it in lack of a better name.
 
 ## Feedback welcome
