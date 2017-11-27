@@ -6,17 +6,17 @@ tags: nextcloud rust
 ---
 
 I've been writing a lot of Rust code this year, partly because I used it for some
-university projects and secondly because I'll start writing a master thesis about
+university projects and also because I'll start writing a master thesis about
 concurrency in Rust soon.
 
 There are many things I like about Rust and its ecosystem. One of them is the
 great CLI tooling with Cargo. Cargo is Rust's build, testing, packaging and
-publishing tool.
+crate publishing tool.
 
 So far I haven't seen anything comparable for Nextcloud. Historically, many of the
 apps use Makefiles for the dev setup and packing. While some more sophisticated
 methods have been developed (I wrote about a similar topic a
-[year ago](/2016/11/29/sign-nextcloud-app.html)) every project has a different
+[year ago](/2016/11/29/sign-nextcloud-app.html)), every project has a different
 kind of script to do the setup and packaging. That means the workflow is anything
 but standardized. Moreover, Makefiles aren't the right tool for this job.
 
@@ -60,12 +60,12 @@ more than that. However, more complex apps will require some additional steps fo
 the packaging. For that purpose, *Krankerl* uses a `krankerl.toml` configuration
 files that lets you specify commands to run before packaging.
 
-Too keep things reproducible, the tool assumes *git* is used as version control.
-*Krankerl* doesn't change the state of the local app repo. Instead, it clones
+Too keep things reproducible, the tool assumes *git* is used as version control system.
+*Krankerl* doesn't change the state of the local app repository. Instead, it clones
 the current `HEAD` into a new directory, from where it starts the packaging process.
 
 There's an additional setting for exclude patterns. This allows to shrink the size
-of app archives by excluding git, testing and some source files.
+of app archives by excluding git, testing and unnecessary files.
 
 Note: The app will fall back to sensible configuration defaults if no `krankerl.toml`
 file is found.
@@ -73,22 +73,22 @@ file is found.
 ## Signature
 
 Nextcloud apps distributed via the official app store are signed. Thus, before we
-can push a new release to the app store, we have to invoke openssl and have it
-do it's crypto magic. Historically, this was one of the commands of a typical
+can push a new release to the app store, we have to invoke OpenSSL and have it
+do its crypto magic. Historically, this was one of the commands of a typical
 Makefile. *Krankerl* has a simple command for it. It follows the convention of
-finding app keys in the `~/.nextcloud/certificats` directory and thus locates
+finding app keys in the `~/.nextcloud/certificates` directory and thus locates
 your keys automatically by reading the app ID from `appinfo/info.xml`.
 
 Note that *Krankerl* only creates a signature for the archive. Nextcloud also has
 got a code signature support where it basically generates a hash values for every
 file in the app directory and signs the JSON-encoded list of file hashes. I've
 tried to re-implement this feature in Rust but I've failed at the point where
-I realised PHP uses a JSON encoding different to the one used in the `serde_json`
+I realized PHP uses a JSON encoding different to the one used in the `serde_json`
 crate for Rust and thus the signatures are wrong.
 
 ## Publishing
 
-Currently, I publish app release in the following way:
+Currently, I manually publish app release in the following way:
 
 1. git tag the current commit
 2. push the tag to GitHub
@@ -102,12 +102,13 @@ Currently, I publish app release in the following way:
 10. hit submit
 
 Those are simple, but many steps I have to take every single time I want to
-publish an app release. Obviously, this quicky gets annoying, especially if you
+publish an app release. Obviously, this quickly gets annoying, especially if you
 are maintainer of a bunch of apps.
 
-The Nextcloud app store has a simple and well documented REST API. Thus it's
+The Nextcloud app store has a
+[simple and well documented REST API](https://nextcloudappstore.readthedocs.io/en/latest/restapi.html).Thus it's
 easily possible to automate the task of registering the app release. From the above steps,
-*Krankerl* can take over 3, 6, 7, 8, 9 and 10. That means, the only manual tasks left are
+*Krankerl* can take over step 3, 6, 7, 8, 9 and 10. That means, the only manual tasks left are
 uploading the archive to GitHub. The rest is fully automated and thus can be done a lot faster.
 
 ## More helpers
@@ -119,8 +120,9 @@ extracted from the `info.xml` file.
 
 ## Download and run
 
-Thanks to Rust, all you need to run the tool is to download and execute it. It should just
-work without instaling any dependencies, assuming it's being used on 64bit Linux, which is
+Thanks to Rust, all you need to run the tool is to
+[download](https://github.com/ChristophWurst/krankerl/releases) and execute it. It should just
+work without installing any dependencies, assuming it's being used on 64bit Linux, which is
 what I've compiled it for.
 
 ## The name
@@ -134,7 +136,7 @@ I chose it in lack of a better name.
 Though, as noted my goal isn't to change every Nextcloud app developer's workflow by
 introducing this tool, I'd be more than happy if others find this useful and we can further
 improve those workflows. If you have any further ideas, questions or problems, please let me
-know in the GitHub issue tracker!
+know in the [GitHub issue tracker](https://github.com/ChristophWurst/krankerl/issues)!
 
 Some personal ideas for future enhancements are
 * [Automatically upload the archive to a GitHub release](https://github.com/ChristophWurst/krankerl/issues/8)
