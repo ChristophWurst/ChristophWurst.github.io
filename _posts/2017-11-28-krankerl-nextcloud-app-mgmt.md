@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Introducing a new way of managing, packaging and publishing Nextcloud apps
+date: 2017-11-28
 comments: false
 tags: nextcloud rust
 ---
