@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: ownCloud Mail 0.5 released
 date: 2016-05-29
 tags: nextcloud

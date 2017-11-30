@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Adding two-factor auth to ownCloud
 date: 2016-05-30
 tags: nextcloud

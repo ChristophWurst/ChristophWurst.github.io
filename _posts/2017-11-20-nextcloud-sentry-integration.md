@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Integrating Sentry crash reporting into Nextcloud
 date: 2017-11-20
 comments: false

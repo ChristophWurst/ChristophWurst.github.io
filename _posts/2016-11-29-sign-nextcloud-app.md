@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Keep your Nextcloud app secure
 date: 2016-11-29
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Secure your Nextcloud with TOTP two-factor auth
 date: 2016-09-08
 tags: nextcloud

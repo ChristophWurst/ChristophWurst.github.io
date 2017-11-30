@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Fotos der Feuerwehrübung vom 7. September 2017
 date: 2017-09-12
 comments: false

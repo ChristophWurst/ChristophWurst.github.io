@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Testing a Nextcloud app with Karma, Jasmine and PhantomJS
 comments: false
 tags: nextcloud, javascript, testing, howto

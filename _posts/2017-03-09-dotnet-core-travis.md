@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Installing .NET Core 1.1.1 SDK on Travis CI
 date: 2017-03-09
 comments: true

@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Photos of the Nextcloud Conf 2017
 date: 2017-09-16
 comments: false

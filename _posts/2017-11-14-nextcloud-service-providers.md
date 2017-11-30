@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Adding service providers to Nextcloud
 date: 2017-11-14
 comments: true

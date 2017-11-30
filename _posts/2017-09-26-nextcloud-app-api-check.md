@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: Automated Nextcloud public API compatibility analysis
 date: 2017-09-26
 comments: true
