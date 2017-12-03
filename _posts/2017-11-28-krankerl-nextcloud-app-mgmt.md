@@ -3,6 +3,8 @@ layout: single
 title: Introducing a new way of managing, packaging and publishing Nextcloud apps
 date: 2017-11-28
 tags: nextcloud rust
+header:
+  image: /assets/oxEEJnq8YVhExjh4vEwBBLHmDm6Fn8h8.jpg
 ---
 
 I've been writing a lot of Rust code this year, partly because I used it for some
