@@ -5,6 +5,7 @@ date: 2017-11-28
 tags: nextcloud rust
 header:
   image: /assets/oxEEJnq8YVhExjh4vEwBBLHmDm6Fn8h8.jpg
+  image_description: "Vine tendrill in a vine yard"
 ---
 
 I've been writing a lot of Rust code this year, partly because I used it for some
