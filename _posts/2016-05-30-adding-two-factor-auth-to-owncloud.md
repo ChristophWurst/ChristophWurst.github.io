@@ -5,6 +5,9 @@ date: 2016-05-30
 tags: nextcloud
 ---
 
+You are reading an old post. I'm working on the [Nextcloud TOTP](https://apps.nextcloud.com/apps/twofactor_totp) and [U2F](https://apps.nextcloud.com/apps/twofactor_u2f) apps now.
+{: .notice--warning }
+
 I have spent a couple of weeks working on a fundamental component of the ownCloud core, its authentication system. Starting with ownCloud 9.1 (which will be released in July 2016) it will be possible to plug custom two-factor auth providers into the ownCloud core for enhanced account security.
 
 ## Pluggable auth
