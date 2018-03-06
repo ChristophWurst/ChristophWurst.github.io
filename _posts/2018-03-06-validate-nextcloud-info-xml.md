@@ -20,7 +20,7 @@ this document is defined by a XML schema that can be downloaded
 
 Most code editors are capable of validating the `info.xml` while you're editing
 it. To ensure that the document remains valid, it's possible to add a check
-on the continuous integration build.
+on your continuous integration service.
 
 
 ## xmllint
@@ -42,7 +42,17 @@ To run this check on [Travis CI], you have to make sure `xmllint` is available.
 It can be installed by adding the `libxml2-utils` [apt package](https://docs.travis-ci.com/user/installing-dependencies/).
 
 
-A working configuration can be found in the [Mail app](https://github.com/nextcloud/mail/blob/043de4b1af02081068bcd15e152f26a4df22ef52/.travis.yml#L83-L86).
+A complete and working configuration can be found in the [Mail app](https://github.com/nextcloud/mail/blob/043de4b1af02081068bcd15e152f26a4df22ef52/.travis.yml#L83-L86).
 
+
+Note that the currently distributed schema on apps.nextcloud.com is slightly outdated and thus elements of Nextcloud's current info.xml are wrongly reported as invalid. This was [fixed recently](https://github.com/nextcloud/appstore/pull/547) and the next appstore deployment will update the schema as well.
+{: .notice--info }
+
+
+## Final Words
+
+If you'd like to learn more about the `info.xml` file, I recommend to take a
+look at the [Nextcloud Developer Manual](https://docs.nextcloud.com/server/13/developer_manual/app/info.html)
+that explains this file in more detail.
 
 [Travis CI]: https://travis-ci.org/
