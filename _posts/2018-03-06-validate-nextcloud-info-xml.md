@@ -55,4 +55,15 @@ If you'd like to learn more about the `info.xml` file, I recommend to take a
 look at the [Nextcloud Developer Manual](https://docs.nextcloud.com/server/13/developer_manual/app/info.html)
 that explains this file in more detail.
 
+As [Joas](https://twitter.com/nickvergessen) pointed out, Nextcloud 14 will automatically validate the schema.
+See [his pull request](https://github.com/nextcloud/server/pull/8232) for more info. This approach here is
+still useful if you're developing your app for Nextcloud 12 and 13.
+{: .notice--info }
+
 [Travis CI]: https://travis-ci.org/
+
+---
+
+<small>
+Update 2018-03-06: Added info about Nextcloud 14's XML validation.
+</small>
