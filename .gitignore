@@ -2,3 +2,4 @@ _site
 .sass-cache
 /nbproject
 /.vscode
+.jekyll-metadata
