@@ -32,9 +32,8 @@ Nightly a few months ago:
 <blockquote class="twitter-tweet" data-lang="de"><p lang="en" dir="ltr">There&#39;s experimental <a href="https://twitter.com/hashtag/U2F?src=hash&amp;ref_src=twsrc%5Etfw">#U2F</a> token support in <a href="https://twitter.com/firefox?ref_src=twsrc%5Etfw">@Firefox</a> 57 &amp; <a href="https://twitter.com/FirefoxNightly?ref_src=twsrc%5Etfw">@FirefoxNightly</a> behind the pref &quot;security.webauth.u2f&quot;; Thanks <a href="https://twitter.com/ttaubert?ref_src=twsrc%5Etfw">@ttaubert</a> &amp; <a href="https://twitter.com/qDot?ref_src=twsrc%5Etfw">@qDot</a>! <a href="https://t.co/CZH2Z9S7Ap">pic.twitter.com/CZH2Z9S7Ap</a></p>&mdash; J.C. Jones (@jamespugjones) <a href="https://twitter.com/jamespugjones/status/912314952232267777?ref_src=twsrc%5Etfw">25. September 2017</a></blockquote>
 
 I tried it right away and it seemed to work with the Nextcloud U2F app.
-You can use U2F on Firefox Quantum now, but you have to
-[enable it in the settings](https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/)
-because it is disabled by default.
+You can use U2F on Firefox Quantum now, but it is disabled by default
+and you have to [enable it in the settings](https://www.yubico.com/2017/11/how-to-navigate-fido-u2f-in-firefox-quantum/).
 
 
 The good news is that Firefox will [soon support hardware tokens by default](https://hacks.mozilla.org/2018/01/using-hardware-token-based-2fa-with-the-webauthn-api/),
