@@ -25,7 +25,7 @@ compatible with the current version of Firefox:
 ![U2F Support Add-on](/assets/20180313_state-of-firefox-u2f/extension.png)
 
 
-Does that mean we cannot use U2F tokens on Firefox anymore? Yes and now. This
+Does that mean we cannot use U2F tokens on Firefox anymore? Yes and no. This
 addon is not usable anymore but native U2F support has been added to Firefox
 Nightly a few months ago:
 
