@@ -8,7 +8,7 @@ tags:
   - u2f
   - nextcloud
   - firefox
-  - floss
+  - foss
 header:
   image: /assets/20180313_state-of-firefox-u2f/header.png
 ---
