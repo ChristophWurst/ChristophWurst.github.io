@@ -149,3 +149,9 @@ Some personal ideas for future enhancements are
 * Detect local changes in the app repo and force developers to commit before
   packaging to keep things reproducible
 * Automatically add git tags and update the version number in `info.xml`
+
+---
+
+<small>
+Update 2018-03-27: Replaced externally hosted image with embedded one.
+</small>

@@ -39,9 +39,3 @@ sync
 
 The update went smooth. The only weird thing was that the fan started spinning
 on max RPM during the update process.
-
----
-
-<small>
-Update 2018-03-27: Replaced externally hosted image with embedded one.
-</small>
