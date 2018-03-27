@@ -131,7 +131,8 @@ what I've compiled it for.
 ## The name
 
 In case you wondered about the app's (strange) name: the word *Krankerl* means
-[*tendril*](https://www.instagram.com/p/BatDv1DhhOe/) in Lower Austrian dialect.
+*tendril* in Lower Austrian dialect. This is what they look like:
+![Krankerl (tendril)](/assets/20171128_kranker_nextcloud_app_mgmt/krankerl.png)
 I chose it in lack of a better name.
 
 ## Feedback welcome
