@@ -27,6 +27,6 @@ package managers are used and if there is a build script defined for npm.
 
 
 For interested Rustaceans: this feature was build with the help of two new
-crates: `composer` and `npm_scripts`. You can find both of them on creates.io:
+crates: `composer` and `npm_scripts`. You can find both of them on crates.io:
 * [composer](https://crates.io/crates/composer)
 * [npm_scripts](https://crates.io/crates/npm_scripts)
