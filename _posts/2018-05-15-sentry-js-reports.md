@@ -33,4 +33,8 @@ The app is available via the [app store](https://apps.nextcloud.com/apps/sentry)
 version, Nextcloud will soon ask you to update to 2.0.0.
 
 
+The configuration requires a small change, so please take a look at the [admin docs](https://github.com/ChristophWurst/nextcloud_sentry/blob/master/doc/admin.md#configuration)
+after the update.
+
+
 If you have any questions, discovered a bug or want to request a new feature, feel free to create a ticket [on GitHub](https://github.com/ChristophWurst/nextcloud_sentry/issues/new/choose).
