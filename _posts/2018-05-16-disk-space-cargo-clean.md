@@ -35,4 +35,4 @@ need at the moment (I can recompile at any time, anyway).
 for proj in $(find . -name Cargo.toml | xargs readlink -f | xargs dirname); do pushd $proj; cargo clean; popd; done
 ```
 
-And voilà! The `rust` directory shrunk to 1.1GB, getting rid of 49GB unneeded storage.
+And voilà! The `rust` directory shrunk to 1.1GB, getting rid of 49GB of unneeded storage.
