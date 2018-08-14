@@ -8,7 +8,7 @@ tags:
   - nextcloud
 ---
 
-Over the course of last week, I released a handful of Nextcloud app updates.
+Over the course of the last week, I released a handful of Nextcloud app updates.
 This process is similar for all my maintained apps, so I have developed a
 workflow which I'd like to document here.
 
