@@ -5,7 +5,7 @@ comments: false
 ---
 
 Christoph Wurst<br>
-2073 Schrattenthal<br>
+2061 Hadres<br>
 Österreich<br>
 <br>
 
