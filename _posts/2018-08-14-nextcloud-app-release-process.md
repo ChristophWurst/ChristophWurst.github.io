@@ -3,6 +3,7 @@ layout: single
 title: Nextcloud App Release Process
 comments: false
 date: 2018-08-14
+last_modified_at: 2018-08-24
 tags:
   - foss
   - nextcloud
@@ -73,10 +74,11 @@ Here is a condensed checklist to be used as overview in the release pull
 request's description.
 
 ```markdown
+[Release checklist](https://blog.wuc.me/2018/08/14/nextcloud-app-release-process.html):
 - [ ] Created `release/x.y.z` branch.
 - [ ] Updated version number.
   - [ ] Updated `appinfo/info.xml`.
-  - [ ] Updated `package.json`¹.
+  - [ ] Updated `package.json`.
   - [ ] Ran `npm install`.
 - [ ] Updated the changelog
 - [ ] Created git tag `vx.y.z`.
@@ -98,3 +100,10 @@ the only developer (without peer reviews).
 
 Since this post serves as documentation for myself, I plan on updating the
 details if any of the steps are changed.
+
+---
+
+Update 2018-08-24:
+* Removed dangling footnote from markdown checklist
+* Added reference to this post to markdown checklist
+
