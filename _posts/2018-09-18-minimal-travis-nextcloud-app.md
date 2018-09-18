@@ -8,6 +8,9 @@ tags:
   - nextcloud
   - travis
   - testing
+header:
+  image: /assets/20180915_minimal_travis_nextcloud_app/header.png
+  image_description: "Build log of a Travis CI build"
 ---
 
 [Travis CI](https://travis-ci.org/) offers free continuous integration services
