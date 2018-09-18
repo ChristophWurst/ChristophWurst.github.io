@@ -129,7 +129,7 @@ env:
 
 The `$SERVER_BRANCH` variable determines the branch to check out of the Server repository.
 This is typically the `master` branch as well as one of the latest stable releases like
-`stable14.0.0`. In this minimal config, Travis will only test against Server `master`, but
+`v14.0.0`. In this minimal config, Travis will only test against Server `master`, but
 you can add more specific options via the [build matrix](https://docs.travis-ci.com/user/customizing-the-build/#build-matrix).
 
 The same applies to the `$DB` variable which tells Nextcloud to install on a `sqlite` database.
