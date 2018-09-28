@@ -132,9 +132,6 @@ gallery:
   - url: /assets/20180928_nextcloud_conf_2018/Nextcloud_Conference_2018_43.jpg
     image_path: /assets/20180928_nextcloud_conf_2018/Nextcloud_Conference_2018_43.jpg
     alt: "Nextcloud Conference 2018"
-  - url: /assets/20180928_nextcloud_conf_2018/Nextcloud_Conference_2018_44.jpg
-    image_path: /assets/20180928_nextcloud_conf_2018/Nextcloud_Conference_2018_44.jpg
-    alt: "Nextcloud Conference 2018"
   - url: /assets/20180928_nextcloud_conf_2018/Nextcloud_Conference_2018_45.jpg
     image_path: /assets/20180928_nextcloud_conf_2018/Nextcloud_Conference_2018_45.jpg
     alt: "Nextcloud Conference 2018"
