@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Unlocking Nextcloud Accounts Locked by Two-Factor Authentication
-comments: false
+comments: true
 tags:
   - foss
   - nextcloud
