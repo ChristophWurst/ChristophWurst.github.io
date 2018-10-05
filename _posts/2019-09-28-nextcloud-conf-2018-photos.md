@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Photos of the Nextcloud Conf 2018
-comments: false
+comments: true
 date: 2018-09-28
 tags:
   - photography

@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Minimal Travis CI Config for Nextcloud Apps
-comments: false
+comments: true
 date: 2018-09-18
 tags:
   - foss
