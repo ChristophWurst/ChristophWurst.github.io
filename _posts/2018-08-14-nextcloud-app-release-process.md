@@ -3,7 +3,7 @@ layout: single
 title: Nextcloud App Release Process
 comments: false
 date: 2018-08-14
-last_modified_at: 2018-08-24
+last_modified_at: 2018-10-08
 tags:
   - foss
   - nextcloud
@@ -75,18 +75,15 @@ request's description.
 
 ```markdown
 [Release checklist](https://blog.wuc.me/2018/08/14/nextcloud-app-release-process.html):
-- [ ] Created `release/x.y.z` branch.
+- [ ] Created release branch.
 - [ ] Updated version number.
   - [ ] Updated `appinfo/info.xml`.
-  - [ ] Updated `package.json`.
-  - [ ] Ran `npm install`.
-- [ ] Updated the changelog
-- [ ] Created git tag `vx.y.z`.
-- [ ] Published app archive.
-  - [ ] Built package with `krankerl package`.
-  - [ ] Pushed tag to GitHub.
-  - [ ] Created new GitHub release.
-  - [ ] Uploaded app tarball to the GitHub release.
+  - [ ] Updated `package.json` and ran `npm install`.
+- [ ] Updated the changelog.
+- [ ] Created release tag.
+- [ ] Pushed tag to GitHub.
+- [ ] Built package with `krankerl package`.
+- [ ] Created new GitHub release.
 - [ ] Published app on App Store.
 ```
 
@@ -107,3 +104,5 @@ Update 2018-08-24:
 * Removed dangling footnote from markdown checklist
 * Added reference to this post to markdown checklist
 
+Update 2018-10-08:
+* Simplified markdown checklist
