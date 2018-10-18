@@ -2,8 +2,7 @@
 layout: single
 title: Working with Vue and Nextcloud's strict CSP
 comments: true
-#date: 2018-10-11
-draft: true
+date: 2018-10-18
 tags:
   - nextcloud
   - vue
@@ -82,3 +81,6 @@ for more info.
 Vue and Nextcloud's strict CSP work well together if you slightly change
 your configuration. Once applied, Vue builds work very well for both
 development and production environments.
+
+You can find more info about the CSP changes in Nextcloud 15 on
+[Roeland's blog](https://rullzer.com/2018/10/18/towards-a-stricter-content-security-policy/).
