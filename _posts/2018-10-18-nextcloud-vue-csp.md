@@ -2,8 +2,7 @@
 layout: single
 title: Working with Vue and Nextcloud's strict CSP
 comments: true
-#date: 2018-10-11
-draft: true
+date: 2018-10-18
 tags:
   - nextcloud
   - vue
