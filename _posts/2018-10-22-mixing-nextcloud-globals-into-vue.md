@@ -2,18 +2,17 @@
 layout: single
 title: Mixing Nextcloud Globals into Vue
 comments: true
-#date: 2018-10-23
-draft: true
+date: 2018-10-22
 tags:
   - nextcloud
   - vue
   - javascript
+  - l10n
   - foss
 ---
 
 Nextcloud apps use global functions to access server APIs like the `t` function to translate
-a given string to the user's locale. Within a Vue template, you can use this function like
-this:
+a given string. Within a Vue template, you can use this function like this:
 
 ```js
 <template>
@@ -32,7 +31,7 @@ browser's console:
 
 ![TypeError: _vm.t is not a function](/assets/20181023_mixing_nextcloud_globals_into_vue/console_error_small.png)
 
-So far the easiest and cleanest way of fixing this I have found is writing a tiny [Vue mixin](https://vuejs.org/v2/guide/mixins.html):
+So far the easiest and cleanest way to fix this I have found is writing a tiny [Vue mixin](https://vuejs.org/v2/guide/mixins.html):
 
 ```js
 // src/mixins/Nextcloud.js
@@ -70,7 +69,22 @@ Alternatively, it can also be applied to specific components only:
 
   export default {
     props: ['user'],
-	mixins: [Nextcloud]
+    mixins: [Nextcloud]
   }
 </script>
+```
+
+## Testing
+
+This tick is also handy for testing scenarios where the globals aren't available. There
+a slightly adjusted mixin can provide stubs for Nextcloud's global functions:
+
+```js
+// src/tests/mixins/Nextcloud.js
+
+export default {
+  methods: {
+    t: (app, str) => str
+  }
+}
 ```
