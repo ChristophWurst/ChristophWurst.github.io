@@ -3,6 +3,7 @@ layout: single
 title: Mixing Nextcloud Globals into Vue
 comments: true
 date: 2018-10-22
+last_modified_at: 2018-10-23
 tags:
   - nextcloud
   - vue
@@ -76,7 +77,7 @@ Alternatively, it can also be applied to specific components only:
 
 ## Testing
 
-This tick is also handy for testing scenarios where the globals aren't available. There
+This trick is also handy for testing scenarios where the globals aren't available. There
 a slightly adjusted mixin can provide stubs for Nextcloud's global functions:
 
 ```js
@@ -88,3 +89,7 @@ export default {
   }
 }
 ```
+
+---
+
+Update 2018-10-23: fixed typo.
