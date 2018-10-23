@@ -10,6 +10,8 @@ tags:
   - javascript
   - l10n
   - foss
+header:
+  image: /assets/20181023_mixing_nextcloud_globals_into_vue/console_error_big.png
 ---
 
 Nextcloud apps use global functions to access server APIs like the `t` function to translate
