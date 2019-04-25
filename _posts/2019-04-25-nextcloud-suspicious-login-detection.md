@@ -13,7 +13,7 @@ header:
   image: /assets/20190424_nextcloud_suspiciou_login_detection/banner.png
 ---
 
-With Nextcloud 16 we release a new security app: *[Suspicious Login](https://apps.nextcloud.com/apps/suspicious_login)*. This app can detect anomalies in IP addresses logging into a user's Nextcloud account using supervised learning of an artificial neural network.
+With [Nextcloud 16](https://nextcloud.com/blog/nextcloud-16-introduces-machine-learning-based-security-and-usability-features-acl-permissions-and-cross-app-projects/) we release a new security app: *[Suspicious Login](https://apps.nextcloud.com/apps/suspicious_login)*. This app can detect anomalies in IP addresses logging into a user's Nextcloud account using supervised learning of an artificial neural network.
 
 ## An Overview
 
