@@ -2,8 +2,8 @@
 layout: single
 title: Detecting Suspicious Nextcloud Logins
 comments: true
-date: 2019-04-24
-last_modified_at: 2019-04-23
+date: 2019-04-25
+last_modified_at: 2019-04-25
 tags:
   - nextcloud
   - security
