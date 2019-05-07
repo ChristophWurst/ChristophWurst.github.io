@@ -1,0 +1,7 @@
+_id: 438a7ee0-70cc-11e9-936a-099b6a65bff3
+message: "Hello, I 'm Wang Jianjun, a Chinese. I read your article ,and nice to meet you.\r\n    I also set up a nextcloud on my service.However, I have some problems, hoping I can get some help from you.\r\n    My account locked out due to 2FA after the version is upgrade from 14 to 15.I tried to use a lot of methods.\r\n    My service's version is ubuntu 18.04.2.\r\n    ![图片](https://www.i-curve.club/wp-content/uploads/2019/05/version.png).\r\n     First,I install some package of the two factor authencation\r\n    ![图片](https://www.i-curve.club/wp-content/uploads/2019/05/package.png)\r\n    My account is curve.When I disable the 2FA by using the command 'sudo -u www-data php occ twofactorauth:disable curve',I got the hint：“Not enough arguments (missing: \"provider_id\").” I don't konw the provider_id.As I type the commond :sudo -u www-data php occ twofactorauth:state curve,I got the information\r\n![图片](https://www.i-curve.club/wp-content/uploads/2019/05/information.png).  \r\nI found all providers was disabled. However,I look up the information, I found other people have one providers is enabled at least. I tried to upgrade the app all by using occ app:update --all. However , those are completely useless.I can't login my nextcloud and disabled the 2FA.\r\n\r\n   Therefore, hoping get some help from you.Thank you.  \r\n   You can get in touch with me by mail or my facebook:Wang Jianjun"
+name: Jianjun Wang
+email: 0a4eee4df6533b53003fa25a1c08b7e0
+url: ''
+hidden: ''
+date: '2019-05-07T13:30:22.679Z'
