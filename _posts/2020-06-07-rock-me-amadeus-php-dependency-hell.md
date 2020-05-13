@@ -26,3 +26,5 @@ I think this is brilliant, and possibly the only real solution to this problem u
 A few experiments with the tool in a Nextcloud app have shown that it does work. The only composer package where it broke is Guzzle with HTTPlug, as some libraries are not correctly re-written and thus the service locator logic fails.
 
 *Und alles ruft* [*Come and rock me Amadeus*](https://www.youtube.com/watch?v=cVikZ8Oe_XA)
+
+For the discussion around Mozart for Nextcloud apps please see [my topic on the community forum](https://help.nextcloud.com/t/escaping-the-dependency-hell/81407).
