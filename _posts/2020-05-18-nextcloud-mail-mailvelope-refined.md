@@ -1,7 +1,7 @@
 ---
 layout: single
 title: "Mailvelope in Nextcloud Mail, refined"
-comments: true
+comments: false
 date: 2020-05-18
 last_modified_at: 2020-05-18
 tags:
@@ -57,3 +57,5 @@ When replying to an encrypted message, we will pass the raw data into Mailvelope
 ## Get it now
 
 Nextcloud ![Mail v1.3.5 has just been relased to the app store](https://apps.nextcloud.com/apps/mail). Upgrade and start encrypting more messages now :wink:
+
+If you have any questions or feedback please let us know [on the forum](https://help.nextcloud.com/t/mailvelope-in-nextcloud-mail-refined/81967) :)
